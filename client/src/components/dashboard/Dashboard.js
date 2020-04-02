@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import { Card, Button } from 'react-bootstrap';
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -10,30 +12,27 @@ class Dashboard extends Component {
 render() {
     const { user } = this.props.auth;
 return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
-            <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
-            </h4>
-            <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
+  <div>
+    <div>
+  <Card>
+  <Card.Header>Please Accept by 9:30 AM</Card.Header>
+  <Card.Body>
+    <Card.Title>Pulls Today</Card.Title>
+    <Card.Subtitle>10:00 AM | 11:00 AM | 12:00 PM | 1:00 PM</Card.Subtitle>
+    <Card.Text>
+      
+    </Card.Text>
+    <Button variant="primary">YES</Button>
+    <Button variant="primary">NO</Button>
+  </Card.Body>
+</Card>
+</div>
+    <Button
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Logout
-            </button>
-          </div>
-        </div>
+            </Button>
       </div>
     );
   }

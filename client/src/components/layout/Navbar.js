@@ -3,22 +3,29 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar-fixed">
-        <nav className="z-depth-0">
-          <div className="nav-wrapper white">
-            <Link
-              to="/"
-              style={{
-                fontFamily: "monospace"
-              }}
-              className="col s5 brand-logo center black-text"
-            >
-              <i className="material-icons">code</i>
-              Puller Platform 
-            </Link>
-          </div>
-        </nav>
+      <nav className="nav-container">
+      <div className="nav-style-line" />
+      <div className="nav-list">
+        <Link className="nav-list-item" to="/dashboard">
+          <img src={Image} alt="" width="45px" />
+        </Link>
+        <Link className="nav-list-item" to="/dashboard">
+          Home
+        </Link>
+        <Link className="nav-list-item" to="/pulls">
+          Today's Pulls
+        </Link>
+        <Link className="nav-list-item" to="/purchases">
+          Purchases | Earnings
+        </Link>
+        <Link className="nav-list-item" to="/accounts">
+          Accounts
+        </Link>
+        <Link className="nav-list-item" to="/training">
+          FAQ | Training
+        </Link>
       </div>
+    </nav>
     );
   }
 }
