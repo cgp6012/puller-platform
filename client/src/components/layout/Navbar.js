@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Dropdown,DropdownButton,Card,Button,Table } from 'react-bootstrap';
+
 class Navbar extends Component {
   render() {
     return (
@@ -10,6 +12,10 @@ class Navbar extends Component {
         <i className="material-icons">code</i>
          Puller Platform 
         </Link>
+        <DropdownButton variant="success" title="Account Type" size="sm">
+  <Dropdown.Item href="">ADMINISTRATOR</Dropdown.Item>
+  <Dropdown.Item href="/dashboard">STANDARD</Dropdown.Item>
+</DropdownButton>
         <Link className="nav-list-item" to="/dashboard">
           Home
         </Link>
