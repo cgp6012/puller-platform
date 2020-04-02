@@ -16,6 +16,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Pulls from "./components/dashboard/Pulls";
 import Purchases from "./components/dashboard/Purchases";
 import Accounts from "./components/dashboard/Accounts";
+import Training from "./components/dashboard/Training";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -51,6 +52,7 @@ class App extends Component {
               <PrivateRoute exact path="/pulls" component={Pulls} />
               <PrivateRoute exact path="/purchases" component={Purchases} />
               <PrivateRoute exact path="/accounts" component={Accounts} />
+              <PrivateRoute exact path="/training" component={Training} />
             </Switch>
           </div>
         </Router>
