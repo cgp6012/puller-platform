@@ -6,8 +6,9 @@ class Navbar extends Component {
       <nav className="nav-container">
       <div className="nav-style-line" />
       <div className="nav-list">
-        <Link className="nav-list-item" to="/dashboard">
-          <img src={Image} alt="" width="45px" />
+        <Link className="nav-list-item green-text center" style={{fontFamily: "monospace"}} to="/dashboard">
+        <i className="material-icons">code</i>
+         Puller Platform 
         </Link>
         <Link className="nav-list-item" to="/dashboard">
           Home
