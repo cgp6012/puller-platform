@@ -14,6 +14,8 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import Pulls from "./components/dashboard/Pulls";
+import Purchases from "./components/dashboard/Purchases";
+import Accounts from "./components/dashboard/Accounts";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -47,6 +49,8 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/pulls" component={Pulls} />
+              <PrivateRoute exact path="/purchases" component={Purchases} />
+              <PrivateRoute exact path="/accounts" component={Accounts} />
             </Switch>
           </div>
         </Router>
