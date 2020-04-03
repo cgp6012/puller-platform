@@ -7,7 +7,7 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <b>Manage</b> and track a team of buyers{" "}
+              Manage and track a team of buyers{" "}
               <span style={{ fontFamily: "monospace" }}>all</span> in one application
             </h4>
             <p className="flow-text grey-text text-darken-1">
