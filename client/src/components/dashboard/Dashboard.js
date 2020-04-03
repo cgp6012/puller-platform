@@ -31,7 +31,7 @@ return (
 <Jumbotron>
   <h1 align="center">Will you be buying today?</h1>
   <p align="center">
- Pull Times: 10:00 AM | 11:00 AM | 12:00 PM | 1:00 PM
+ Today's Date: April 3, 2020
   </p>
   <h4 align="center">10:00 AM</h4>
   <p align="center">Justin Beiber - Paul Brown Stadium</p>
