@@ -11,7 +11,7 @@ class Landing extends Component {
               <span style={{ fontFamily: "monospace" }}>all</span> in one application
             </h4>
             <p className="flow-text grey-text text-darken-1">
-              Register or login in below to start buying with your team today!
+              Register or Login below to start buying on the Puller Platform with your team today!
             </p>
             <br />
             <div className="col s6">
@@ -22,7 +22,7 @@ class Landing extends Component {
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="btn btn-small waves-effect waves-light hoverable green accent-3"
               >
                 Register
               </Link>
@@ -35,7 +35,7 @@ class Landing extends Component {
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large btn-flat waves-effect white black-text"
+                className="btn btn-small waves-effect waves-light hoverable green accent-3"
               >
                 Log In
               </Link>
