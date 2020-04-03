@@ -17,7 +17,7 @@ import Pulls from "./components/dashboard/Pulls";
 import Purchases from "./components/dashboard/Purchases";
 import Accounts from "./components/dashboard/Accounts";
 import Training from "./components/dashboard/Training";
-
+/*
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -36,7 +36,7 @@ if (localStorage.jwtToken) {
     window.location.href = "./login";
   }
 }
-
+*/
 class App extends Component {
   render() {
     return (
@@ -47,13 +47,15 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              <PrivateRoute exact path="/pulls" component={Pulls} />
-              <PrivateRoute exact path="/purchases" component={Purchases} />
-              <PrivateRoute exact path="/accounts" component={Accounts} />
-              <PrivateRoute exact path="/training" component={Training} />
-            </Switch>
+    
+            
+            
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/pulls" component={Pulls} />
+              <Route exact path="/purchases" component={Purchases} />
+              <Route exact path="/accounts" component={Accounts} />
+              <Route exact path="/training" component={Training} />
+            
           </div>
         </Router>
       </Provider>
