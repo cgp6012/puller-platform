@@ -17,7 +17,9 @@ return (
   <Card>
   <Card.Header>Please Accept by 9:30 AM</Card.Header>
   <Card.Body>
-    <Card.Title>Pulls Today</Card.Title>
+    <Card.Title text='dark'>Pulls Today</Card.Title>
+    <Card.Body></Card.Body>
+    <Card.Title>10:00 AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Justin Beiber - Paul Brown Stadium</Card.Subtitle>
     <Card.Text>
@@ -26,6 +28,8 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Body></Card.Body>
+    <Card.Title>11:00 AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Alanis Morissette - Paul Brown Stadium</Card.Subtitle>
     <Card.Text>
@@ -43,6 +47,8 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
   <Card.Body></Card.Body>
+  <Card.Title>1:00 PM</Card.Title>
+    <Card.Body></Card.Body>
     <Card.Subtitle>BTS - Rose Bowl</Card.Subtitle>
     <Card.Text>
       https://www1.ticketmaster.com/bts/event/1600CA4D8075

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Jumbotron } from 'react-bootstrap';
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -16,6 +16,7 @@ return (
     <div>
   <Card>
   <Card.Header>Please Accept by 9:30 AM</Card.Header>
+  {/*
   <Card.Body>
     <Card.Title>Pulls Today</Card.Title>
     <Card.Text></Card.Text>
@@ -25,15 +26,29 @@ return (
     <Button variant="primary" >YES</Button>
     {"  "}
     <Button variant="primary" >NO</Button>
-  </Card.Body>
+  </Card.Body> */}
 </Card>
+<Jumbotron>
+  <h1 align="center">Will you be buying today?</h1>
+  <p align="center">
+ Pull Times: 10:00 AM | 11:00 AM | 12:00 PM | 1:00 PM
+  </p>
+  <p></p>
+  <p></p>
+  <p align="center">
+  <Button variant="success" size="lg" >Accept</Button>
+    {"  "}
+    <Button variant="danger" size="lg" >Pass</Button>
+  </p>
+</Jumbotron>
 </div>
-    <Button
+   {/* <Button
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Logout
             </Button>
+   */}
       </div>
     );
   }
