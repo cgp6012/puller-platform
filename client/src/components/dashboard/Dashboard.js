@@ -33,12 +33,36 @@ return (
   <p align="center">
  Pull Times: 10:00 AM | 11:00 AM | 12:00 PM | 1:00 PM
   </p>
-  <p></p>
-  <p></p>
+  <h4 align="center">10:00 AM</h4>
+  <p align="center">Justin Beiber - Paul Brown Stadium</p>
   <p align="center">
-  <Button variant="success" size="lg" >Accept</Button>
+  <Button variant="success" size="sm" >Accept</Button>
     {"  "}
-    <Button variant="danger" size="lg" >Pass</Button>
+    <Button variant="danger" size="sm" >Pass</Button>
+  </p>
+  <p></p>
+  <h4 align="center">11:00 AM</h4>
+  <p align="center">Alanis Morissette - Paul Brown Stadium</p>
+  <p align="center">BTS - Rose Bowl</p>
+  <p align="center">
+  <Button variant="success" size="sm" >Accept</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Pass</Button>
+  </p>
+  <h4 align="center">12:00 PM</h4>
+  <p align="center">Rolling Stones - Xfinity Center</p>
+  <p align="center">
+  <Button variant="success" size="sm" >Accept</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Pass</Button>
+  </p>
+  <p></p>
+  <h4 align="center">1:00 PM</h4>
+  <p align="center">BTS - AT&T Stadium</p>
+  <p align="center">
+  <Button variant="success" size="sm" >Accept</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Pass</Button>
   </p>
 </Jumbotron>
 </div>
