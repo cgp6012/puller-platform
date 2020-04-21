@@ -1,4 +1,3 @@
-require('rootpath')();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -6,9 +5,6 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const app = express();
 const path = require('path');
-const cors = require('cors');
-const errorHandler = require('_helpers/error-handler');
-
 
 // Bodyparser middleware
 app.use(
@@ -17,7 +13,6 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-app.use(cors());
 // DB Config
 const db = require("./config/keys").mongoURI;
 // Connect to MongoDB
@@ -34,12 +29,6 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
-
-// api routes
-app.use('/users', require('./users/users.controller'));
-
-// global error handler
-app.use(errorHandler);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));

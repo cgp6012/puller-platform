@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import { loadUser } from "./actions/authActions";
+import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -18,9 +18,6 @@ import Pulls from "./components/dashboard/Pulls";
 import Purchases from "./components/dashboard/Purchases";
 import Accounts from "./components/dashboard/Accounts";
 import Training from "./components/dashboard/Training";
-
-
-
 /*
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -42,10 +39,6 @@ if (localStorage.jwtToken) {
 }
 */
 class App extends Component {
-  componentDidMount() {
-    store.dispatch(loadUser());
-  }
-  
   render() {
     return (
       <Provider store={store}>
