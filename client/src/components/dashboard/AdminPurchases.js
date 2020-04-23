@@ -5,7 +5,7 @@ import { logoutUser } from "../../actions/authActions";
 import { Dropdown,DropdownButton,Card,Button,Table } from 'react-bootstrap';
 import DatePick from "./DatePick";
 
-class Purchases extends Component {
+class AdminPurchases extends Component {
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
@@ -20,14 +20,27 @@ return (
   <Card.Body>
     <Card.Title></Card.Title>
     <Card.Title>Track Purchases By Account</Card.Title>
+    <div>
     <DropdownButton id="dropdown-basic-button" title="Date Range">
   <Dropdown.Item href="#/action-1">Today</Dropdown.Item>
   <Dropdown.Item href="#/action-2">This Month</Dropdown.Item>
   <Dropdown.Item href="#/action-3">Last 7 Days</Dropdown.Item>
   <Dropdown.Item href="#/action-3">Custom Range</Dropdown.Item>
 </DropdownButton>
+</div>
   </Card.Body>
 </Card>
+
+<div class="float-right">
+<DropdownButton id="dropdown-basic-button" title="Team Member">
+  <Dropdown.Item href="#/action-1">Alec</Dropdown.Item>
+  <Dropdown.Item href="#/action-2">Bob</Dropdown.Item>
+  <Dropdown.Item href="#/action-3">Brian</Dropdown.Item>
+  <Dropdown.Item href="#/action-4">Carson</Dropdown.Item>
+  <Dropdown.Item href="#/action-5">John</Dropdown.Item>
+  <Dropdown.Item href="#/action-6">Sharon</Dropdown.Item>
+</DropdownButton>
+</div>
 <DatePick/>
 <Table striped bordered hover>
   <thead>
@@ -37,6 +50,7 @@ return (
       <th>Quantity Purchased</th>
       <th>Amount Purchased</th>
       <th>Payout</th>
+      <th>Purchaser</th>
     </tr>
   </thead>
   <tbody>
@@ -46,6 +60,7 @@ return (
       <td>12</td>
       <td>$400</td>
       <td>$40</td>
+      <td>John</td>
     </tr>
     <tr>
       <td>2</td>
@@ -53,6 +68,7 @@ return (
       <td>51</td>
       <td>$325</td>
       <td>$14</td>
+      <td>John</td>
     </tr>
     <tr>
       <td>3</td>
@@ -60,6 +76,7 @@ return (
       <td>24</td>
       <td>$240</td>
       <td>$31</td>
+      <td>John</td>
     </tr>
     <tr>
       <td>4</td>
@@ -67,6 +84,7 @@ return (
       <td>10</td>
       <td>$214</td>
       <td>$8</td>
+      <td>Bob</td>
     </tr>
     <tr>
       <td>5</td>
@@ -74,6 +92,7 @@ return (
       <td>94</td>
       <td>$741</td>
       <td>$215</td>
+      <td>Bob</td>
     </tr>
     <tr>
       <td>6</td>
@@ -81,6 +100,7 @@ return (
       <td>212</td>
       <td>$2,457</td>
       <td>$351</td>
+      <td>Bob</td>
     </tr>
     <tr>
       <td>7</td>
@@ -88,6 +108,7 @@ return (
       <td>212</td>
       <td>$1,451</td>
       <td>$400</td>
+      <td>Sharon</td>
     </tr>
     <tr>
       <td>8</td>
@@ -95,6 +116,7 @@ return (
       <td>101</td>
       <td>$741</td>
       <td>$154</td>
+      <td>Sharon</td>
     </tr>
     <tr>
       <td>9</td>
@@ -102,6 +124,7 @@ return (
       <td>51</td>
       <td>$612</td>
       <td>$97</td>
+      <td>Sharon</td>
     </tr>
     <tr>
       <td>10</td>
@@ -109,6 +132,7 @@ return (
       <td>24</td>
       <td>$218</td>
       <td>$31</td>
+      <td>Sharon</td>
     </tr>
     <tr>
       <td>11</td>
@@ -116,6 +140,7 @@ return (
       <td>112</td>
       <td>$103</td>
       <td>$11</td>
+      <td>Carson</td>
     </tr>
     <tr>
       <td>12</td>
@@ -123,6 +148,7 @@ return (
       <td>69</td>
       <td>$740</td>
       <td>$300</td>
+      <td>Carson</td>
     </tr>
     <tr>
       <td>13</td>
@@ -130,6 +156,7 @@ return (
       <td>31</td>
       <td>$350</td>
       <td>$64</td>
+      <td>Brian</td>
     </tr>
     <tr>
       <td>14</td>
@@ -137,6 +164,7 @@ return (
       <td>18</td>
       <td>$311</td>
       <td>$35</td>
+      <td>Brian</td>
     </tr>
     <tr>
       <td>15</td>
@@ -144,6 +172,7 @@ return (
       <td>79</td>
       <td>$812</td>
       <td>$147</td>
+      <td>Alec</td>
     </tr>
     <tr>
       <td>16</td>
@@ -151,6 +180,7 @@ return (
       <td>31</td>
       <td>$412</td>
       <td>$74</td>
+      <td>Alec</td>
     </tr>
     <tr>
       <td>17</td>
@@ -158,6 +188,7 @@ return (
       <td>26</td>
       <td>$521</td>
       <td>$100</td>
+      <td>Alec</td>
     </tr>
     
   </tbody>
@@ -173,7 +204,7 @@ return (
     );
   }
 }
-Purchases.propTypes = {
+AdminPurchases.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -183,4 +214,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { logoutUser }
-)(Purchases);
+)(AdminPurchases);

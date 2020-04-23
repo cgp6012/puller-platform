@@ -18,6 +18,13 @@ import Pulls from "./components/dashboard/Pulls";
 import Purchases from "./components/dashboard/Purchases";
 import Accounts from "./components/dashboard/Accounts";
 import Training from "./components/dashboard/Training";
+import AdminDashboard from './components/dashboard/AdminDashboard';
+import AdminPulls from './components/dashboard/AdminPulls';
+import AdminPurchases from './components/dashboard/AdminPurchases';
+import AdminAccounts from './components/dashboard/AdminAccounts';
+import AdminTraining from './components/dashboard/AdminTraining';
+import AdminUsers from './components/dashboard/AdminUsers';
+import PullerFeed from './components/dashboard/PullerFeed';
 /*
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -55,6 +62,13 @@ class App extends Component {
               <Route exact path="/purchases" component={Purchases} />
               <Route exact path="/accounts" component={Accounts} />
               <Route exact path="/training" component={Training} />
+              <Route exact path="/admindashboard" component={AdminDashboard} />
+              <Route exact path="/adminpulls" component={AdminPulls} />
+              <Route exact path="/adminpurchases" component={AdminPurchases} />
+              <Route exact path="/adminaccounts" component={AdminAccounts} />
+              <Route exact path="/admintraining" component={AdminTraining} />
+              <Route exact path="/adminusers" component={AdminUsers} />
+              <Route exact path="/pullerfeed" component={PullerFeed} />
             <Footer/>
           </div>
         </Router>

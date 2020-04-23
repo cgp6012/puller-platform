@@ -13,18 +13,23 @@
     "eslint-utils": "^2.0.0",
     "eslint-visitor-keys": "^1.1.0",
     "handlebars": "^4.7.6",
+    "jquery": "^3.5.0",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-datepicker": "^2.14.1",
+    "react-dates": "^21.8.0",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.4.1",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-dates": "^17.1.10"
   }
 }

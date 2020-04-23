@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Jumbotron } from 'react-bootstrap';
 
-
-class Pulls extends Component {
+class AdminPulls extends Component {
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
@@ -19,7 +18,12 @@ return (
   <Card.Header>Please Accept by 9:30 AM</Card.Header>
   <Card.Body>
     <Card.Title text='dark'>Pulls Today</Card.Title>
+    <div class='float-left'>
+    <Button variant='success' size='sm'>Add Event</Button>
+    </div>
     <Card.Body></Card.Body>
+    <Card.Body></Card.Body>
+    <Jumbotron>
     <Card.Title>10:00 AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Justin Beiber - Paul Brown Stadium</Card.Subtitle>
@@ -29,7 +33,14 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Text> 
+    <Button variant="success" size="sm" >Edit</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Delete</Button>
+    </Card.Text>
+    </Jumbotron>
     <Card.Body></Card.Body>
+    <Jumbotron>
     <Card.Title>11:00 AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Alanis Morissette - Paul Brown Stadium</Card.Subtitle>
@@ -39,6 +50,11 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Text> 
+    <Button variant="success" size="sm" >Edit</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Delete</Button>
+    </Card.Text>
     <Card.Body></Card.Body>
     <Card.Subtitle>BTS - Rose Bowl</Card.Subtitle>
     <Card.Text>
@@ -47,7 +63,14 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Text> 
+    <Button variant="success" size="sm" >Edit</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Delete</Button>
+    </Card.Text>
+    </Jumbotron>
     <Card.Body></Card.Body>
+    <Jumbotron>
     <Card.Title>12:00 PM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Rolling Stones - Xfinity Center</Card.Subtitle>
@@ -57,7 +80,14 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Text> 
+    <Button variant="success" size="sm" >Edit</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Delete</Button>
+    </Card.Text>
+    </Jumbotron>
   <Card.Body></Card.Body>
+  <Jumbotron>
   <Card.Title>1:00 PM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>BTS - Rose Bowl</Card.Subtitle>
@@ -67,6 +97,12 @@ return (
     <Card.Text> - Buy All Lowers </Card.Text>
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
+    <Card.Text> 
+    <Button variant="success" size="sm" >Edit</Button>
+    {"  "}
+    <Button variant="danger" size="sm" >Delete</Button>
+    </Card.Text>
+    </Jumbotron>
   </Card.Body>
 </Card>
 </div>
@@ -80,7 +116,7 @@ return (
     );
   }
 }
-Pulls.propTypes = {
+AdminPulls.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -90,4 +126,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { logoutUser }
-)(Pulls);
+)(AdminPulls);

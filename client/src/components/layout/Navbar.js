@@ -31,6 +31,27 @@ class Navbar extends Component {
         <Link className="nav-list-item" to="/training">
           FAQ | Training
         </Link>
+        <Link className="nav-list-item" to="/admindashboard">
+          Admin Home
+        </Link>
+        <Link className="nav-list-item" to="/adminpulls">
+          Admin Pulls
+        </Link>
+        <Link className="nav-list-item" to="/adminpurchases">
+          Admin Purchases
+        </Link>
+        <Link className="nav-list-item" to="/adminaccounts">
+          Admin Accounts
+        </Link>
+        <Link className="nav-list-item" to="/admintraining">
+          Admin Training
+        </Link>
+        <Link className="nav-list-item" to="/adminusers">
+          Admin Users
+        </Link>
+        <Link className="nav-list-item" to="/pullerfeed">
+          Puller Feed
+        </Link>
       </div>
     </nav>
     );
