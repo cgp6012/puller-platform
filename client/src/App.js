@@ -55,13 +55,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            
-            
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/pulls" component={Pulls} />
-              <Route exact path="/purchases" component={Purchases} />
-              <Route exact path="/accounts" component={Accounts} />
-              <Route exact path="/training" component={Training} />
+            <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/admindashboard" component={AdminDashboard} />
               <Route exact path="/adminpulls" component={AdminPulls} />
               <Route exact path="/adminpurchases" component={AdminPurchases} />

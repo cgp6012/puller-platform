@@ -43,7 +43,7 @@ class DatePick extends Component {
               minDate={new Date()}
               maxDate={addDays(new Date(), 7)}
           />
-          <button className="btn btn-primary">Select Start Date</button>
+          <button className="btn btn-primary">Select Date</button>
         </div>
       </form>
       </div>

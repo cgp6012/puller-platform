@@ -19,18 +19,6 @@ class Navbar extends Component {
         <Link className="nav-list-item" to="/dashboard">
           Home
         </Link>
-        <Link className="nav-list-item" to="/pulls">
-          Today's Pulls
-        </Link>
-        <Link className="nav-list-item" to="/purchases">
-          Purchases | Earnings
-        </Link>
-        <Link className="nav-list-item" to="/accounts">
-          Accounts
-        </Link>
-        <Link className="nav-list-item" to="/training">
-          FAQ | Training
-        </Link>
         <Link className="nav-list-item" to="/admindashboard">
           Admin Home
         </Link>

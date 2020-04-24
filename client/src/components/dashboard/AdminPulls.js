@@ -17,14 +17,10 @@ return (
   <Card>
   <Card.Header>Please Accept by 9:30 AM</Card.Header>
   <Card.Body>
-    <Card.Title text='dark'>Pulls Today</Card.Title>
-    <div class='float-left'>
-    <Button variant='success' size='sm'>Add Event</Button>
-    </div>
-    <Card.Body></Card.Body>
+    <Card.Title text='dark'>Puller's Responses</Card.Title>
     <Card.Body></Card.Body>
     <Jumbotron>
-    <Card.Title>10:00 AM</Card.Title>
+    <Card.Title>Bob Vanderham - 10:00AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Justin Beiber - Paul Brown Stadium</Card.Subtitle>
     <Card.Text>
@@ -34,14 +30,16 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
     <Card.Text> 
-    <Button variant="success" size="sm" >Edit</Button>
+    <Button variant="success" size="sm" >Confirm</Button>
     {"  "}
-    <Button variant="danger" size="sm" >Delete</Button>
+    <Button variant="danger" size="sm" >Deny</Button>
+    {" "}
+    <Button variant="primary" size="sm" >Assign Different Event</Button>
     </Card.Text>
     </Jumbotron>
     <Card.Body></Card.Body>
     <Jumbotron>
-    <Card.Title>11:00 AM</Card.Title>
+    <Card.Title>Carson Poe - 11:00 AM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Alanis Morissette - Paul Brown Stadium</Card.Subtitle>
     <Card.Text>
@@ -51,9 +49,11 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
     <Card.Text> 
-    <Button variant="success" size="sm" >Edit</Button>
+    <Button variant="success" size="sm" >Confirm</Button>
     {"  "}
-    <Button variant="danger" size="sm" >Delete</Button>
+    <Button variant="danger" size="sm" >Deny</Button>
+    {" "}
+    <Button variant="primary" size="sm" >Assign Different Event</Button>
     </Card.Text>
     <Card.Body></Card.Body>
     <Card.Subtitle>BTS - Rose Bowl</Card.Subtitle>
@@ -64,14 +64,16 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
     <Card.Text> 
-    <Button variant="success" size="sm" >Edit</Button>
+    <Button variant="success" size="sm" >Confirm</Button>
     {"  "}
-    <Button variant="danger" size="sm" >Delete</Button>
+    <Button variant="danger" size="sm" >Deny</Button>
+    {" "}
+    <Button variant="primary" size="sm" >Assign Different Event</Button>
     </Card.Text>
     </Jumbotron>
     <Card.Body></Card.Body>
     <Jumbotron>
-    <Card.Title>12:00 PM</Card.Title>
+    <Card.Title>Brian Reites - 12:00 PM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>Rolling Stones - Xfinity Center</Card.Subtitle>
     <Card.Text>
@@ -81,14 +83,16 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
     <Card.Text> 
-    <Button variant="success" size="sm" >Edit</Button>
+    <Button variant="success" size="sm" >Confirm</Button>
     {"  "}
-    <Button variant="danger" size="sm" >Delete</Button>
+    <Button variant="danger" size="sm" >Deny</Button>
+    {" "}
+    <Button variant="primary" size="sm" >Assign Different Event</Button>
     </Card.Text>
     </Jumbotron>
   <Card.Body></Card.Body>
   <Jumbotron>
-  <Card.Title>1:00 PM</Card.Title>
+  <Card.Title>Carson Poe - 1:00 PM</Card.Title>
     <Card.Body></Card.Body>
     <Card.Subtitle>BTS - Rose Bowl</Card.Subtitle>
     <Card.Text>
@@ -98,9 +102,11 @@ return (
     <Card.Text> - Buy All Full View Cheaps ($49.50) </Card.Text>
     <Card.Text> - Buy $70 full view clubs </Card.Text>
     <Card.Text> 
-    <Button variant="success" size="sm" >Edit</Button>
+    <Button variant="success" size="sm" >Confirm</Button>
     {"  "}
-    <Button variant="danger" size="sm" >Delete</Button>
+    <Button variant="danger" size="sm" >Deny</Button>
+    {" "}
+    <Button variant="primary" size="sm" >Assign Different Event</Button>
     </Card.Text>
     </Jumbotron>
   </Card.Body>
