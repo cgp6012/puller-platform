@@ -19,7 +19,7 @@ class Navbar extends Component {
         <Link className="nav-list-item" to="/dashboard">
           Home
         </Link>
-        <Link className="nav-list-item" to="/admindashboard">
+        <Link className="nav-list-item" to="/appevent">
           Admin Home
         </Link>
         <Link className="nav-list-item" to="/adminpulls">

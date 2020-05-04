@@ -31,6 +31,11 @@ import Applayout from './components/Applayout';
 import Edit from './components/Edit';
 import Create from './components/Create';
 import Show from './components/Show';
+import EventShow from './components/EventShow';
+import EventCreate from './components/EventCreate';
+import EventEdit from './components/EventEdit';
+import AppEvent from './components/AppEvent';
+
 
 /*
 // Check for token to keep user logged in
@@ -75,6 +80,10 @@ class App extends Component {
               <Route path='/edit/:id' component={Edit} />
               <Route path='/create' component={Create} />
               <Route path='/show/:id' component={Show} />
+              <Route exact path='/appevent' component={AppEvent} />
+              <Route path='/evedit/:id' component={EventEdit} />
+              <Route path='/evcreate' component={EventCreate} />
+              <Route path='/evshow/:id' component={EventShow} />
             <Footer/>
           </div>
         </Router>

@@ -3,30 +3,30 @@ import { Link } from 'react-router-dom';
 import firebase from '../Firebase';
 import { Dropdown,DropdownButton,Card,Button,Table } from 'react-bootstrap';
 
-class Applayout extends Component {
+class AppEvent extends Component {
   constructor(props) {
     super(props);
-    this.ref = firebase.firestore().collection('boards');
+    this.ref = firebase.firestore().collection('events');
     this.unsubscribe = null;
     this.state = {
-      boards: []
+      events: []
     };
   }
 
   onCollectionUpdate = (querySnapshot) => {
-    const boards = [];
+    const events = [];
     querySnapshot.forEach((doc) => {
-      const { username, phone, assign } = doc.data();
-      boards.push({
+      const { time, eventname, description } = doc.data();
+      events.push({
         key: doc.id,
         doc, // DocumentSnapshot
-        username,
-        phone,
-        assign,
+        time,
+        eventname,
+        description,
       });
     });
     this.setState({
-      boards
+      events
    });
   }
 
@@ -36,36 +36,39 @@ class Applayout extends Component {
 
   render() {
     return (
-      <div>
-          <Card>
+      <div class="container">
+           <Card>
   <Card.Header>Please Accept by 9:30 AM</Card.Header>
   <Card.Body>
-    <Card.Title>Assigned Accounts for Purchasing</Card.Title>
+    <Card.Title>Events Today</Card.Title>
   </Card.Body>
 </Card>
         <div class="panel panel-default">
           <div class="panel-heading">
+            <h3 class="panel-title">
+            
+            </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/create" class="btn btn-success">Assign New Account</Link></h4>
-            <Table striped>
+            <h4><Link to="/evcreate" class="btn btn-success">Add Event</Link></h4>
+            <table class="table table-stripe">
               <thead>
                 <tr>
-                  <th>Username</th>
-                  <th>Phone Number</th>
-                  <th>Assigned User</th>
+                  <th>Time</th>
+                  <th>Event</th>
+                  <th>Puller Instructions</th>
                 </tr>
               </thead>
               <tbody>
-                {this.state.boards.map(board =>
+                {this.state.events.map(event =>
                   <tr>
-                    <td><Link to={`/show/${board.key}`}>{board.username}</Link></td>
-                    <td>{board.phone}</td>
-                    <td>{board.assign}</td>
+                    <td><Link to={`/evshow/${event.key}`}>{event.time}</Link></td>
+                    <td>{event.eventname}</td>
+                    <td>{event.description}</td>
                   </tr>
                 )}
               </tbody>
-            </Table>
+            </table>
           </div>
         </div>
       </div>
@@ -73,4 +76,4 @@ class Applayout extends Component {
   }
 }
 
-export default Applayout;
+export default AppEvent;
