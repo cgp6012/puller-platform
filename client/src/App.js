@@ -25,6 +25,13 @@ import AdminAccounts from './components/dashboard/AdminAccounts';
 import AdminTraining from './components/dashboard/AdminTraining';
 import AdminUsers from './components/dashboard/AdminUsers';
 import PullerFeed from './components/dashboard/PullerFeed';
+import Form from './components/dashboard/Form';
+import Secform from './components/dashboard/Secform';
+import Applayout from './components/Applayout';
+import Edit from './components/Edit';
+import Create from './components/Create';
+import Show from './components/Show';
+
 /*
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -57,12 +64,17 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/admindashboard" component={AdminDashboard} />
+              <Route exact path="/secform" component={Secform} />
               <Route exact path="/adminpulls" component={AdminPulls} />
               <Route exact path="/adminpurchases" component={AdminPurchases} />
               <Route exact path="/adminaccounts" component={AdminAccounts} />
               <Route exact path="/admintraining" component={AdminTraining} />
               <Route exact path="/adminusers" component={AdminUsers} />
               <Route exact path="/pullerfeed" component={PullerFeed} />
+              <Route exact path='/applayout' component={Applayout} />
+              <Route path='/edit/:id' component={Edit} />
+              <Route path='/create' component={Create} />
+              <Route path='/show/:id' component={Show} />
             <Footer/>
           </div>
         </Router>

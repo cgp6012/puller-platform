@@ -28,7 +28,7 @@ class Navbar extends Component {
         <Link className="nav-list-item" to="/adminpurchases">
           Admin Purchases
         </Link>
-        <Link className="nav-list-item" to="/adminaccounts">
+        <Link className="nav-list-item" to="/applayout">
           Admin Accounts
         </Link>
         <Link className="nav-list-item" to="/admintraining">
